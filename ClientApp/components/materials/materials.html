@@ -1,0 +1,24 @@
+﻿<template>
+    <div class="table-responsive">
+        <table class="table-hover" v-if="data">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Status</th>
+                    <th>Title</th>
+                    <th>Summary</th>
+                    <!-- and so on -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(item, idx) in archivelist">
+                    <td>{{ item.id }}></td>
+                    <td>{{ item.status }}></td>
+                    <td>{{ item.title }}></td>
+                    <td>{{ item.summary }}></td>
+                    <!-- and so on -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</template>
